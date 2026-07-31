@@ -1,3 +1,4 @@
+<!-- https://dev.to/codeply/bootstrap-5-sidebar-examples-38pb -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -33,29 +34,65 @@
     <title>DESIG</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-primary">
-      <div class="container-fluid">
-        <!-- a class="navbar-brand active" aria-current="page" href="index.html" -->
-          <!-- i class="bi-house-fill" style="color: white;"></i -->
-          <span  style="font-size:24px; color: white">Digital Explorers SIG</span>
-        <!-- /a -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li><a href="/desig/index.html" style="color: white">Home</a></li>
-                <li><a href="/desig/schedule.html" style="color: white">Schedule</a></li>
-                <li><a href="/desig/sessions/index.html" style="color: white">Sessions</a></li>
-                <li><a href="/desig/parking_lot.html" style="color: white">Parking Lot</a></li>
-                <li><a href="/desig/vpn.html" style="color: white">VPN</a></li>
-          </ul>
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- NAVBAR START ------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------->
+    <div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+        <div class="offcanvas-header">
+            <h5 class="h5 text-primary offcanvas-title d-none d-sm-block" id="offcanvas">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-      </div>
-    </nav>
-    <main class="container">
-        <div class="p-5 rounded">
-            
+        <div class="offcanvas-body px-0">
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-truncate">
+                        <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#submenu1" data-bs-toggle="collapse" class="nav-link text-truncate">
+                        <i class="fs-5 bi-calendar3"></i><span class="ms-1 d-none d-sm-inline">Schedule</span> </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-truncate">
+                        <i class="fs-5 bi-book"></i><span class="ms-1 d-none d-sm-inline">Handouts</span></a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-truncate">
+                        <i class="fs-5 bi-cpu"></i><span class="ms-1 d-none d-sm-inline">Tech Skills 101</span></a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-truncate">
+                        <i class="fs-5 bi-list-columns-reverse"></i><span class="ms-1 d-none d-sm-inline">Terms</span> </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-truncate">
+                        <i class="fs-5 bi-archive"></i><span class="ms-1 d-none d-sm-inline">Original Site</span> </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- NAVBAR END --------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col min-vh-100 py-3">
+                <nav class="navbar navbar-dark bg-primary">
+                  <div class="container-fluid">
+                    <span style="color: white"><h4 class="h4">Digital Explorers SIG</h4></span>
+                    <!-- toggler -->
+                    <button class="btn btn-primary float-start" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+                        <i class="bi bi-list fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+                    </button>
+                  </div>
+                </nav>
+                <main class="container">
+                    <div class="p-5 rounded">
+                    <!----------------------------------------------------------------------------------------------------->
+                    <!-- PAGE CONTENT START ------------------------------------------------------------------------------->
+                    <!----------------------------------------------------------------------------------------------------->
+                    
     <div class="container">
         <h1>Digital Explorers SIG</h1>
     </div>
@@ -96,7 +133,13 @@
         </p>
     </div>
 
+                    </div>
+                </main>
+                <!----------------------------------------------------------------------------------------------------->
+                <!-- PAGE CONTENT END --------------------------------------------------------------------------------->
+                <!----------------------------------------------------------------------------------------------------->
+            </div>
         </div>
-    </main>
+    </div>
   </body>
 </html>
