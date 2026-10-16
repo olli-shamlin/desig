@@ -1,0 +1,303 @@
+<!-- https://dev.to/codeply/bootstrap-5-sidebar-examples-38pb -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <!-- added in an attempt to get web traffic analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J323FWZ4RY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-J323FWZ4RY');
+    </script>
+    <!-- *** END *** Google tag (gtag.js) -->
+    <meta name="robots" content="none" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        .icon-primary { color: #0d6efd; }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/navbar-top-fixed.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>DESIG</title>
+  </head>
+  <body>
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- NAVBAR START ------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------->
+    <div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+        <div class="offcanvas-header">
+            <h5 class="h5 text-primary offcanvas-title d-none d-sm-block" id="offcanvas">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0">
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+                <li class="nav-item">
+                    <a href="/desig/" class="nav-link text-truncate">
+                        <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/desig/schedule/" class="nav-link text-truncate">
+                        <i class="fs-5 bi-calendar3"></i>
+                        <span class="ms-1 d-none d-sm-inline">Schedule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/desig/tech_skills_101/" class="nav-link text-truncate">
+                        <i class="fs-5 bi-cpu"></i>
+                        <span class="ms-1 d-none d-sm-inline">Tech Skills 101</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/desig/society/" class="nav-link text-truncate">
+                        <i class="fs-5 bi-people-fill"></i>
+                        <span class="ms-1 d-none d-sm-inline">Social Impacts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/desig/handbook/" class="nav-link text-truncate">
+                        <i class="fs-5 bi-book"></i>
+                        <span class="ms-1 d-none d-sm-inline">Handbook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/desig/glossary/" class="nav-link text-truncate">
+                        <i class="fs-5 bi-list-columns-reverse"></i>
+                        <span class="ms-1 d-none d-sm-inline">Glossary</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/desig/references/" class="nav-link text-truncate">
+                        <i class="fs-5 bi-file-earmark-text"></i>
+                        <span class="ms-1 d-none d-sm-inline">References</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- NAVBAR END --------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col min-vh-100 py-3">
+                <nav class="navbar navbar-dark bg-primary">
+                    <div class="container-fluid">
+                        <span style="color: white">
+                            <h4 class="h4">
+                                <a href="/desig/" style="color: white; text-decoration: none;">Digital Explorers SIG</a>
+                            </h4>
+                        </span>
+                        <!-- toggler -->
+                        <button class="btn btn-primary float-start" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+                            <i class="bi bi-list fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+                        </button>
+                    </div>
+                </nav>
+                <main class="container">
+                    <div class="p-5 rounded">
+                    <!----------------------------------------------------------------------------------------------------->
+                    <!-- PAGE CONTENT START ------------------------------------------------------------------------------->
+                    <!----------------------------------------------------------------------------------------------------->
+                    
+    <div class="container">
+        <h1>What is Digital Literacy?</h1>
+    </div>
+    <div class="container">
+        <h2>Definition</h2>
+            <p>
+                Digital literacy is an individual's ability to find, evaluate, and communicate information using
+                digital devices or digital media platforms, as well as the ability to navigate, evaluate, create,
+                and communicate information in digital environments. Digital literacy combines technical and
+                cognitive abilities; it includes using information and communication technologies (ICT) to create,
+                evaluate, and share information, and critically examining their social and political impacts.
+                <sup><a href="#wikipedia">[1]</a></sup></li>
+            </p>
+        <h2>Pillars</h2>
+            <p>Digital literacy learning frameworks are based on the following principles:</p>
+            <ol>
+                <li><strong>Comprehension:</strong> The ability to understand digital content
+                    <p></p>
+                    <p>Digital literacy means knowing how to really get what you’re looking at on the internet.
+                        It’s not just about the surface stuff, but digging deeper to grasp the details on digital
+                        platforms.<sup><a href="#projectnewyorker">[2]</a></sup></p>
+                </li>
+                <li><strong>Interdependence:</strong> Understanding how digital media is interconnected
+                    <p></p>
+                    <p>Digital stuff on the web is like a big web of connections. When you know how things
+                        link up, you can use digital content better.<sup><a href="#projectnewyorker">[2]</a></sup></p>
+                </li>
+                <li><strong>Curation:</strong> the ability to find, organize and save digital content to your preferences
+                    <p></p>
+                    <p>Think of digital curation as creating your own online library. You can pick and choose
+                        what you want to keep, so you can easily find it later.
+                        <sup><a href="#projectnewyorker">[2]</a></sup></p>
+                </li>
+                <li><strong>Safety</strong><sup><a href="#sandiego">[4]</a></sup>
+                    <p></p>
+                    <ul>
+                        <li>To protect devices, content, personal data and privacy in digital
+                            environments.
+                        <li>To protect physical and psychological health, and to be aware of digital technologies
+                            for social well-being and social inclusion.
+                        <li>To be aware of the environmental impact of digital technologies and their uses.
+                    </ul>
+                    <p></p>
+                </li>
+                <li><strong>Problem-Solving:</strong> The skills needed to use technology for work and educational
+                    pursuits, social and professional networking, and civic participation.
+                    <p></p>
+                    <p>This aspect of digital literacy includes selecting the right technology to carry out a specific
+                        task or solve a particular problem.<sup><a href="#technopedia">[2]</a></sup></p>
+                </li>
+                <li><strong>Social Factors</strong>
+                    <p></p>
+                    <ul>
+                        <li>Age, education, gender, income, and household type help understand how particular media
+                            is perceived or what content is more successful.</li>
+                        <li>Remember, online, people come from all walks of life, like different ages, have various
+                            educations, jobs, and families. All of these things impact how stuff is made, shared,
+                            and stored online.<sup><a href="#projectnewyorker">[2]</a></sup></li>
+                    </ul>
+                    <p></p>
+                </li>
+            </ol>
+        <h2>More on Social Factors</h2>
+            <h5>Digital Divide</h5>
+                <p>Digital divide refers to disparities (such as those living in the developed vs the developing world)
+                    concerning access to and the use of information and communication technologies (ICT), such as
+                    computer hardware, software, and the Internet, among people.<sup><a href="#wikipedia">[1]</a></sup>
+                </p>
+            <h5>Participation Gap</h5>
+                <p>In addition to the disparity between "the haves and the have nots" (reflected by the digital divide),
+                    there is an access-competency gap: the discrepancy between an individual's level of access to digital
+                    technologies and their capacity to use those technologies effectively, critically, and safely.
+                    I.e., a large degree/level of access to digital technology may not translate into meaningful
+                    participation and may instead increase vulnerability to online risks.
+                    <sup><a href="#frontiersin">[5]</a></sup></p>
+            <h5>Digital Rights</h5>
+                <p>Digital rights are an individual's rights that allow them freedom of expression and opinion in an
+                    online setting, with roots centered on human theoretical and practical rights. It encompasses the
+                    individual's privacy rights when using the Internet, and is essentially concerned with how an
+                    individual uses different technologies and how content is distributed and mediated.
+                    <sup><a href="#wikipedia">[1]</a></sup>
+                </p>
+            <h5>Digital Citizenship</h5>
+                <p>Digital citizenship refers to the "right to participate in society online". It is connected to the
+                    notion of state-based citizenship, which is determined by the country or region in which one was
+                    born, and concerns being a dutiful citizen who participates in the electoral process and online
+                    through mass media. A literate digital citizen possesses the skills to read, write and interact
+                    with online communities via screens and has an orientation towards social justice.
+                    <sup><a href="#wikipedia">[1]</a></sup>
+                </p>
+            <h5>Digital Natives and Digital Immigrants</h5>
+                <p>
+                    A digital native is an individual born into the digital age who has used and applied digital
+                    skills from a young age, whereas 'digital immigrant' refers to an individual who adopts
+                    technology later in life. These two groups of people have had different interactions with
+                    technology since birth, a generational gap. This directly links to their individual and
+                    unique relationship with digital literacy.
+                    <sup><a href="#wikipedia">[1]</a></sup>
+                </p>
+        <h2>Competencies<sup><a href="#wikipedia" style="font-size: 0.5em;">[1]</a></sup></h2>
+            <ol>
+                <li><strong>General knowledge and functional skills.</strong>
+                    Knowing the basics of digital devices and using them for elementary purposes.</li>
+                <li><strong>Use in everyday life.</strong>
+                    Being able to integrate digital technologies into the activities in everyday life.</li>
+                <li><strong>Specialized and advanced competence in work and creative expression.</strong>
+                    Being able to use ICT (Information and Communication Technologies) to express your creativity
+                    and improve your professional performance.</li>
+            </ol>
+            <div class="alert alert-success" role="alert">
+                The above three competencies are the basic knowledge and skills a person has to have to be a
+                fully digitally literate person. When these three competencies are acquired, this knowledge and
+                those skills to can be built upon to acquire the other competencies.
+            </div>
+            <ol start="3">
+                <li><strong>Technology-mediated communication and collaboration</strong>.
+                    Being able to connect, share, communicate, and collaborate with others effectively in a
+                    digital environment.</li>
+                <li><strong>Information processing and management.</strong>
+                    Using technology to improve your ability to gather, analyze, and judge the relevance and
+                    purpose of digital information.</li>
+                <li><strong>Privacy and security.</strong> Being able to protect your privacy and take appropriate
+                    security measures.</li>
+                <li><strong>Legal and ethical aspects.</strong> Behaving appropriately in a socially responsible way in
+                    the digital environment and being aware of the legal and ethical aspects of the use of ICT.</li>
+                <li><strong>Balanced attitude towards technology.</strong>
+                    Demonstrating an informed, open-minded, and balanced attitude towards an information society and
+                    the use of digital technologies.</li>
+                <li><strong>Understanding and awareness of the role of ICT in society.</strong> Understanding the
+                    broader context of use and development of ICT.</li>
+                <li><strong>Learning about and with digital technologies.</strong>
+                    Exploring emerging technologies and integrating them.</li>
+                <li><strong>Informed decisions on appropriate digital technologies</strong>.
+                    Being aware of the most relevant or common technologies.</li>
+                <li><strong>Seamless use demonstrating self-efficacy.</strong>
+                    Confidently and creatively applying digital technologies to increase personal and professional
+                    effectiveness and efficiency.</li>
+            </ol>
+        <h2>References/Further Reading</h2>
+        <ol>
+            <li id="wikipedia">
+                <a href="https://en.wikipedia.org/wiki/Digital_literacy">wikipedia.org</a>: Digital literacy
+            </li>
+            <li id="projectnewyorker">
+                <a href="https://projectnewyorker.org/what-is-digital-literacy-and-why-is-it-important/">
+                    projectnewyorker.org
+                </a>:
+                What Is Digital Literacy and Why Is It Important?
+            </li>
+            <li id="technopedia">
+                <a href="https://www.techopedia.com/definition/digital-literacy-digital-fluency">technopedia.com</a>:
+                Digital Literacy (Digital Fluency)
+            </li>
+            <li id="sandiego">
+                <a href="https://pce.sandiego.edu/digital-literacy/">sandiego.edu</a>:
+                A Teacher’s Guide to Digital Literacy & Digital Literacy Skills in the Classroom
+            </li>
+            <li id="frontiersin">
+                <a href="https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1815060/full">
+                    frontiersin.org</a>:
+                Digital participation outside institutional provision: implications of the access–competence gap
+                for digital transformation in Ghana's basic education system
+            </li>
+        </ol>
+    </div>
+
+                    </div>
+                </main>
+                <!----------------------------------------------------------------------------------------------------->
+                <!-- PAGE CONTENT END --------------------------------------------------------------------------------->
+                <!----------------------------------------------------------------------------------------------------->
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
